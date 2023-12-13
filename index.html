@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Content Blocker</title>
+</head>
+<body>
+    <form method="post" action="block.php">
+        <label>
+            <input type="checkbox" name="options[]" value="google_ads"> Google Ads
+        </label>
+        <label>
+            <input type="checkbox" name="options[]" value="google_analytics"> Google Analytics
+        </label>
+        <label>
+            <input type="checkbox" name="options[]" value="soundcloud"> SoundCloud
+        </label>
+        <label>
+            <input type="checkbox" name="options[]" value="youtube_embed"> YouTube Embed
+        </label>
+
+        <br>
+
+        <label>
+            Custom Pattern:
+            <input type="text" name="custom_pattern">
+        </label>
+
+        <br>
+
+        <input type="submit" value="Apply Changes">
+    </form>
+</body>
+</html>
